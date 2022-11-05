@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <script src="/javascripts/registration.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">Registration</h1>
+        <form class="form" action="/users/register" method="post" name="form" onsubmit="return validate()">
+            
+            <label for="fname" class="fname">First name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name">
+            <label for="lname" class="lname">Last Name</label>
+            <input type="text" class="lastname" id="lastname" placeholder="Last Name">
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" class="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" class="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" class="others">
+            <label for="others">Others</label>
+            <label for="age">Age</label>
+            <label for="adminid">Admin Id</label>
+            <input type="text" name="aminid" id="adminid">
+
+            <label for="userid">User ID</label>
+            <input type="text" id="userId" name="userId">
+
+
+            <label for="Password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+
+            <input type="text" id="age" name="age" placeholder="34Y 4M">
+            <button type="submit" id="btn1" class="btn1">submit</button>
+        </form>
+    </div>
+</body>
+</html>
